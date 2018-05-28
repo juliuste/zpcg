@@ -26,7 +26,7 @@ This package contains data in the [*Friendly Public Transport Format*](https://g
 
 - [`stations()`](docs/stations.md) to get a list of operated stations, such as `Podgorica`, `Bar` or `Belgrade`.
 - [`journeys(origin, destination, date = new Date())`](docs/journeys.md) to get routes between stations. *Please note that the API doesn't yet support interchange connections.*
-- [`journeyLeg(legId, departureDate)`](docs/journeys.md) to get all passed stations and prices for a given journey leg.
+- [`journeyLeg(legId, departureDate)`](docs/journeyLeg.md) to get all passed stations and prices for a given journey leg.
 
 ## Contributing
 
