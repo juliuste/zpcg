@@ -33,7 +33,6 @@
 		"got": "^8.3.1",
 		"lodash.isdate": "^4.0.1",
 		"lodash.isstring": "^4.0.1",
-		"lodash.merge": "^4.6.1",
 		"moment-timezone": "^0.5.17"
 	},
 	"devDependencies": {
