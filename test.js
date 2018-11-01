@@ -28,7 +28,7 @@ tape('zpcg.journeys', async (t) => {
 
 		t.ok(journey.legs.length === 1, 'legs length')
 		t.ok(journey.legs[0].origin === 'Podgorica', 'origin id')
-		t.ok(journey.legs[journey.legs.length-1].destination === 'Belgrade', 'destination id')
+		t.ok(journey.legs[journey.legs.length-1].destination === 'Belgrade-Topcider', 'destination id')
 
 		for (let l of journey.legs) {
 			t.ok(l.operator === 'ŽPCG', 'leg operator')
