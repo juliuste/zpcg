@@ -4,7 +4,7 @@ const tape = require('tape')
 const validate = require('validate-fptf')
 const isString = require('lodash.isstring')
 const moment = require('moment-timezone')
-const zpcg = require('./index')
+const zpcg = require('.')
 
 tape('zpcg.stations', async (t) => {
 	const s = await zpcg.stations()
