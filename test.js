@@ -30,7 +30,7 @@ tape('zpcg.journeys', async (t) => {
 
 		t.ok(journey.legs.length === 1, 'legs length')
 		t.ok(journey.legs[0].origin === 'Podgorica', 'origin id')
-		t.ok(journey.legs[journey.legs.length-1].destination === 'Belgrade-Topcider', 'destination id')
+		t.ok(journey.legs[journey.legs.length - 1].destination === 'Belgrade-Topcider', 'destination id')
 
 		for (let l of journey.legs) {
 			t.ok(l.operator === 'ŽPCG', 'leg operator')
@@ -57,13 +57,13 @@ tape('zpcg.journeyLeg', async (t) => {
 		t.ok(stopover.departure || stopover.arrival, 'departure/arrival')
 		if (stopover.arrival) {
 			t.ok(+new Date(stopover.arrival) >= +date, 'arrival')
-			t.ok(+new Date(stopover.arrival) <= +date+3*24*60*60*1000, 'arrival')
+			t.ok(+new Date(stopover.arrival) <= +date + 3 * 24 * 60 * 60 * 1000, 'arrival')
 		}
 		if (stopover.departure) {
 			t.ok(+new Date(stopover.departure) >= +date, 'departure')
-			t.ok(+new Date(stopover.departure) <= +date+3*24*60*60*1000, 'departure')
+			t.ok(+new Date(stopover.departure) <= +date + 3 * 24 * 60 * 60 * 1000, 'departure')
 		}
-		if (stopover.arrival && stopover.departure) {
+		if (stopover.arrival && stopover.departure) {
 			t.ok(+new Date(stopover.arrival) <= +new Date(stopover.departure), 'arrival before departure')
 		}
 
